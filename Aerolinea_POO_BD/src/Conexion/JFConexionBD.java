@@ -8,7 +8,7 @@ import java.sql.ResultSet;
 import javax.swing.JOptionPane;
 
 public class JFConexionBD extends javax.swing.JFrame {
-    public static final String URL = "jdbc:mysql://localhost/Aerolinea";
+    public static final String URL = "jdbc:mysql://localhost/aerolinea";
     public static final String USERNAME = "root";
     public static final String PASSWORD = "";
     Connection con = null;

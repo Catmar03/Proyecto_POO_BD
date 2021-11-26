@@ -15,7 +15,7 @@ public class ConexionBD {
 public static void main(String[] args) {
         try{
             Class.forName("com.mysql.jdbc.Driver");
-            Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost/Aerolinea","root","");
+            Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost/aerolinea","root","");
             PreparedStatement ps = conexion.prepareStatement("SHOW FULL TABLES FROM Aerolinea");
             ResultSet rs = ps.executeQuery();
             mostrarDatos(rs);
