@@ -41,14 +41,22 @@ public class Menu extends javax.swing.JFrame {
 
         jDesktopPane2 = new javax.swing.JDesktopPane();
         jMenuBar1 = new javax.swing.JMenuBar();
-        me = new javax.swing.JMenu();
+        GP = new javax.swing.JMenu();
+        jEdicion = new javax.swing.JMenuItem();
+        jDelete = new javax.swing.JMenuItem();
+        jNuevo = new javax.swing.JMenuItem();
+        Asin = new javax.swing.JMenu();
+        jEdiciones2 = new javax.swing.JMenuItem();
+        jDelete2 = new javax.swing.JMenuItem();
+        jNuevos2 = new javax.swing.JMenuItem();
+        Reser = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
-        jMenuItem2 = new javax.swing.JMenuItem();
-        jMenuItem3 = new javax.swing.JMenuItem();
-        jMenu3 = new javax.swing.JMenu();
-        jMenuItem4 = new javax.swing.JMenuItem();
-        jMenuItem5 = new javax.swing.JMenuItem();
-        jMenu4 = new javax.swing.JMenu();
+        jDelete3 = new javax.swing.JMenuItem();
+        jNuevos3 = new javax.swing.JMenuItem();
+        Avi = new javax.swing.JMenu();
+        jEdiciones4 = new javax.swing.JMenuItem();
+        jDelete4 = new javax.swing.JMenuItem();
+        jNuevos4 = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -63,36 +71,67 @@ public class Menu extends javax.swing.JFrame {
             .addGap(0, 343, Short.MAX_VALUE)
         );
 
-        me.setText("Getion de Pasajeros");
+        GP.setText("Getion de Pasajeros");
 
-        jMenuItem1.setText("jMenuItem1");
-        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+        jEdicion.setText("Ediciones");
+        jEdicion.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem1ActionPerformed(evt);
+                jEdicionActionPerformed(evt);
             }
         });
-        me.add(jMenuItem1);
+        GP.add(jEdicion);
 
-        jMenuItem2.setText("jMenuItem2");
-        me.add(jMenuItem2);
+        jDelete.setText("Delete");
+        jDelete.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jDeleteActionPerformed(evt);
+            }
+        });
+        GP.add(jDelete);
 
-        jMenuItem3.setText("jMenuItem3");
-        me.add(jMenuItem3);
+        jNuevo.setText("Nuevos");
+        GP.add(jNuevo);
 
-        jMenuBar1.add(me);
+        jMenuBar1.add(GP);
 
-        jMenu3.setText("jMenu3");
+        Asin.setText("Asientos");
 
-        jMenuItem4.setText("jMenuItem4");
-        jMenu3.add(jMenuItem4);
+        jEdiciones2.setText("Ediciones");
+        Asin.add(jEdiciones2);
 
-        jMenuItem5.setText("jMenuItem5");
-        jMenu3.add(jMenuItem5);
+        jDelete2.setText("Delete");
+        Asin.add(jDelete2);
 
-        jMenuBar1.add(jMenu3);
+        jNuevos2.setText("Nuevos");
+        Asin.add(jNuevos2);
 
-        jMenu4.setText("jMenu4");
-        jMenuBar1.add(jMenu4);
+        jMenuBar1.add(Asin);
+
+        Reser.setText("Reservas");
+
+        jMenuItem1.setText("Ediciones");
+        Reser.add(jMenuItem1);
+
+        jDelete3.setText("Delete");
+        Reser.add(jDelete3);
+
+        jNuevos3.setText("Nuevos");
+        Reser.add(jNuevos3);
+
+        jMenuBar1.add(Reser);
+
+        Avi.setText("Aviones");
+
+        jEdiciones4.setText("Ediciones");
+        Avi.add(jEdiciones4);
+
+        jDelete4.setText("Delete");
+        Avi.add(jDelete4);
+
+        jNuevos4.setText("Nuevos");
+        Avi.add(jNuevos4);
+
+        jMenuBar1.add(Avi);
 
         setJMenuBar(jMenuBar1);
 
@@ -110,9 +149,13 @@ public class Menu extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
+    private void jEdicionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jEdicionActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem1ActionPerformed
+    }//GEN-LAST:event_jEdicionActionPerformed
+
+    private void jDeleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jDeleteActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jDeleteActionPerformed
 /*
     public void centrarImgagenes(JMenu label, String rutaImagen) {
 
@@ -157,15 +200,23 @@ public class Menu extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JMenu Asin;
+    private javax.swing.JMenu Avi;
+    private javax.swing.JMenu GP;
+    private javax.swing.JMenu Reser;
+    private javax.swing.JMenuItem jDelete;
+    private javax.swing.JMenuItem jDelete2;
+    private javax.swing.JMenuItem jDelete3;
+    private javax.swing.JMenuItem jDelete4;
     private javax.swing.JDesktopPane jDesktopPane2;
-    private javax.swing.JMenu jMenu3;
-    private javax.swing.JMenu jMenu4;
+    private javax.swing.JMenuItem jEdicion;
+    private javax.swing.JMenuItem jEdiciones2;
+    private javax.swing.JMenuItem jEdiciones4;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
-    private javax.swing.JMenuItem jMenuItem2;
-    private javax.swing.JMenuItem jMenuItem3;
-    private javax.swing.JMenuItem jMenuItem4;
-    private javax.swing.JMenuItem jMenuItem5;
-    private javax.swing.JMenu me;
+    private javax.swing.JMenuItem jNuevo;
+    private javax.swing.JMenuItem jNuevos2;
+    private javax.swing.JMenuItem jNuevos3;
+    private javax.swing.JMenuItem jNuevos4;
     // End of variables declaration//GEN-END:variables
 }
