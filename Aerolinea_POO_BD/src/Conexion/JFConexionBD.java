@@ -1,6 +1,4 @@
-
 package Conexion;
-
 import com.mysql.jdbc.Connection;
 import com.mysql.jdbc.PreparedStatement;
 import java.sql.DriverManager;
@@ -8,11 +6,14 @@ import java.sql.ResultSet;
 import javax.swing.JOptionPane;
 
 public class JFConexionBD extends javax.swing.JFrame {
+
     public static final String URL = "jdbc:mysql://localhost/aerolinea";
     public static final String USERNAME = "root";
     public static final String PASSWORD = "";
     Connection con = null;
     ResultSet rs = null;
+
+
     public JFConexionBD() {
         initComponents();
     }
@@ -31,8 +32,8 @@ public class JFConexionBD extends javax.swing.JFrame {
         JTF_Usuario = new javax.swing.JTextField();
         JTF_Acceso = new javax.swing.JLabel();
         JCB_Acceso = new javax.swing.JComboBox<>();
-        JTF_Contra = new javax.swing.JTextField();
         JBT_Guardar = new javax.swing.JButton();
+        JTF_Contra = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -67,8 +68,6 @@ public class JFConexionBD extends javax.swing.JFrame {
 
         JCB_Acceso.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Administrador", "Pasajero" }));
 
-        JTF_Contra.setBorder(javax.swing.BorderFactory.createTitledBorder("Contraseña"));
-
         JBT_Guardar.setText("Guardar");
         JBT_Guardar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -76,31 +75,17 @@ public class JFConexionBD extends javax.swing.JFrame {
             }
         });
 
+        JTF_Contra.setBorder(javax.swing.BorderFactory.createTitledBorder("Contraseña"));
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jBT_Conectar)
+                .addGap(40, 40, 40)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jBT_Conectar)
-                        .addGap(40, 40, 40))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(34, 34, 34)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(JTF_Tele, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(JTF_Apellidos, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(JTF_Nombres, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(JTF_Usuario, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(0, 0, Short.MAX_VALUE)))
-                        .addGap(75, 75, 75)))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(JTF_Contra, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(JTF_DNI, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(JBT_Desconectar)
                     .addComponent(JTF_Sexo, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -110,8 +95,22 @@ public class JFConexionBD extends javax.swing.JFrame {
                         .addComponent(JCB_Acceso, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(76, 76, 76))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(JBT_Guardar)
+                .addGap(34, 34, 34)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(JTF_Tele, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(JTF_Apellidos, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(JTF_Nombres, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(JTF_Usuario, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(212, 212, 212)
+                        .addComponent(JBT_Guardar))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(96, 96, 96)
+                        .addComponent(JTF_Contra, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(46, 46, 46))
         );
         layout.setVerticalGroup(
@@ -136,10 +135,10 @@ public class JFConexionBD extends javax.swing.JFrame {
                         .addComponent(JTF_Acceso)
                         .addComponent(JCB_Acceso, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(JTF_Usuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(JTF_Contra, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 31, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(JTF_Usuario)
+                    .addComponent(JTF_Contra))
+                .addGap(18, 31, Short.MAX_VALUE)
                 .addComponent(JBT_Guardar)
                 .addContainerGap())
         );
@@ -159,7 +158,8 @@ public class JFConexionBD extends javax.swing.JFrame {
         }
         return con;
     }
- public static PreparedStatement realizarConsulta(Connection con, String consulta) {
+
+    public static PreparedStatement realizarConsulta(Connection con, String consulta) {
         PreparedStatement ps = null;
         try {
             ps = (PreparedStatement) con.prepareStatement(consulta);
@@ -171,7 +171,7 @@ public class JFConexionBD extends javax.swing.JFrame {
 
     }
     private void jBT_ConectarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBT_ConectarActionPerformed
-  PreparedStatement ps = null;
+        PreparedStatement ps = null;
 
         try {
             if (con != null && !con.isClosed()) {
@@ -187,13 +187,13 @@ public class JFConexionBD extends javax.swing.JFrame {
     }//GEN-LAST:event_jBT_ConectarActionPerformed
 
     private void JBT_DesconectarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBT_DesconectarActionPerformed
- try {
+        try {
             con.close();
             JOptionPane.showMessageDialog(null, "Se cerro exitosamente");
         } catch (Exception e) {
             JOptionPane.showMessageDialog(null, "No existen conexiones abiertas");
 
-        }       
+        }
     }//GEN-LAST:event_JBT_DesconectarActionPerformed
 
     private void JBT_GuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBT_GuardarActionPerformed
@@ -216,7 +216,7 @@ public class JFConexionBD extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(null, "No se pudo guardar el registro");
             }
         } catch (Exception e) {
-        }
+              }
     }//GEN-LAST:event_JBT_GuardarActionPerformed
 
     public static void main(String args[]) {
