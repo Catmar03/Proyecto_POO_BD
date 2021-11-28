@@ -170,6 +170,7 @@ public class Login1 extends javax.swing.JFrame {
         bg.add(txtusario, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 240, 410, 30));
 
         jButton1.setText("INICIAR");
+        jButton1.setBorder(null);
         bg.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 400, 160, 50));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
