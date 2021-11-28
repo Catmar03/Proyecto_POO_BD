@@ -55,14 +55,14 @@ public class Login2 extends javax.swing.JFrame {
         jLabel4.setFont(new java.awt.Font("Baskerville Old Face", 0, 36)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("AEROLINEAS");
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 400, 230, 40));
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 390, 230, 40));
 
         logo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         logo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMG/Imagen5.png"))); // NOI18N
-        jPanel1.add(logo, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 90, 290, 160));
+        jPanel1.add(logo, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 90, 290, 160));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMG/Imagen3.jpg"))); // NOI18N
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 0, 290, 500));
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 0, 290, 500));
 
         jLabel5.setFont(new java.awt.Font("Roboto Black", 1, 24)); // NOI18N
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMG/el vuela vuela.png"))); // NOI18N
