@@ -1,7 +1,7 @@
 package Modelo;
 
 import com.mysql.jdbc.Connection;
-import java.awt.HeadlessException;
+import java.awt.HeadlessException; 
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 public class Consultas extends conexion  {
