@@ -65,6 +65,7 @@ public class Login2 extends javax.swing.JFrame {
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 0, 290, 500));
 
         jLabel5.setFont(new java.awt.Font("Roboto Black", 1, 24)); // NOI18N
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMG/el vuela vuela.png"))); // NOI18N
         jLabel5.setText("AEREOLINEAS");
         jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 60, -1, -1));
 
