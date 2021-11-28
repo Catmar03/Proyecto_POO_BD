@@ -4,75 +4,12 @@
   <NonVisualComponents>
     <Menu class="javax.swing.JMenuBar" name="jMenuBar1">
       <SubComponents>
-        <Menu class="javax.swing.JMenu" name="GP">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="Getion de Pasajeros"/>
-          </Properties>
-          <SubComponents>
-            <MenuItem class="javax.swing.JMenuItem" name="jEdicion">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Ediciones"/>
-              </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jEdicionActionPerformed"/>
-              </Events>
-            </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="jDelete">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Delete"/>
-              </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jDeleteActionPerformed"/>
-              </Events>
-            </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="jNuevo">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Nuevos"/>
-              </Properties>
-            </MenuItem>
-          </SubComponents>
-        </Menu>
-        <Menu class="javax.swing.JMenu" name="Asin">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="Asientos"/>
-          </Properties>
-          <SubComponents>
-            <MenuItem class="javax.swing.JMenuItem" name="jEdiciones2">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Ediciones"/>
-              </Properties>
-            </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="jDelete2">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Delete"/>
-              </Properties>
-            </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="jNuevos2">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Nuevos"/>
-              </Properties>
-            </MenuItem>
-          </SubComponents>
-        </Menu>
         <Menu class="javax.swing.JMenu" name="Reser">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Reservas"/>
+            <Property name="text" type="java.lang.String" value="Reservas de pasajeros"/>
           </Properties>
           <SubComponents>
-            <MenuItem class="javax.swing.JMenuItem" name="jMenuItem1">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Ediciones"/>
-              </Properties>
-            </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="jDelete3">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Delete"/>
-              </Properties>
-            </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="jNuevos3">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Nuevos"/>
-              </Properties>
             </MenuItem>
           </SubComponents>
         </Menu>
@@ -80,23 +17,16 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="Aviones"/>
           </Properties>
-          <SubComponents>
-            <MenuItem class="javax.swing.JMenuItem" name="jEdiciones4">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Ediciones"/>
-              </Properties>
-            </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="jDelete4">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Delete"/>
-              </Properties>
-            </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="jNuevos4">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Nuevos"/>
-              </Properties>
-            </MenuItem>
-          </SubComponents>
+        </Menu>
+        <Menu class="javax.swing.JMenu" name="GP">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Getion de Pasajeros"/>
+          </Properties>
+        </Menu>
+        <Menu class="javax.swing.JMenu" name="Asin">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Asientos"/>
+          </Properties>
         </Menu>
       </SubComponents>
     </Menu>

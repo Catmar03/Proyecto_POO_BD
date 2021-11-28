@@ -19,8 +19,9 @@ public class Login extends javax.swing.JFrame {
     public Login() {
         initComponents();
         this.setLocationRelativeTo(null);
+        this.setTitle("ventana");
       // setIconImage(new ImageIcon(getClass().getResource("/descarga.png")).getImage());
-      jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMG/descarga.png"))); 
+      
     
     }
     /**
