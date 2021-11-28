@@ -25,7 +25,7 @@ public class Menu extends javax.swing.JFrame {
         initComponents();
          this.setExtendedState(MAXIMIZED_BOTH);
        //  this.centrarImgagenes(this.me, "/IMG/descarga.png");
-         
+        int perro;
     }
     
     
