@@ -5,11 +5,14 @@
 package Modelo;
 
 import com.mysql.jdbc.Connection;
+import java.awt.HeadlessException;
 import java.awt.List;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import javax.management.Query;
+import javax.swing.JOptionPane;
 
 public class ConsultasAvion extends conexion implements CRUD {
 
@@ -86,6 +89,7 @@ public class ConsultasAvion extends conexion implements CRUD {
             ps.setInt(1, id);
             ps.executeUpdate();
         } catch (Exception e) {
+            System.out.println(e);
         }
     }
 
@@ -108,29 +112,50 @@ public class ConsultasAvion extends conexion implements CRUD {
                 lista.add(a);
             }
         } catch (SQLException e) {
+            System.out.println(e);
         }
         return lista;
 
     }
 
-    public Avion listarID(int id) {
-        Avion a = new Avion();
-        String sql = "SELECT * FROM `tbavion` WHERE IdAvion=1;=?";
+    public Avion buscar_reg(int id) {
+        Avion r = null;
+        String sql = "SELECT * FROM tbavion" + " WHERE idAvion='" + id + "'";
         try {
             ps = con.prepareStatement(sql);
-            ps.setInt(1, id);
             rs = ps.executeQuery();
-            while (rs.next()) {
-                a.setIdAvion(rs.getInt(1));
-                a.setAerolinea(rs.getString(2));
-                a.setFabricante(rs.getString(3));
-                a.setCapacidadPersonas(rs.getInt(4));
-                a.setEstado(rs.getString(5));
-                
-                
-            }
-        } catch (Exception e) {
+            System.out.println("Correcto");
+        } catch (SQLException e) {
+            System.out.println(" No Correcto");
         }
-        return a;
+        r = asignar();
+        return r;
+
+    }
+
+    public Avion asignar() {
+        Avion r = null;
+        int id;
+        String aerolinea;
+        String fabricante;
+        int capacidadPersonas;
+        String estado;
+        try {
+            if (rs.next()) {
+                id = rs.getInt("idAvion");
+                aerolinea = rs.getString("aerolinea");
+                fabricante = rs.getString("fabricante");
+                capacidadPersonas = rs.getInt("Capacidad_Personas");
+                estado = rs.getString("Estado");
+
+                r = new Avion(id, aerolinea, fabricante, capacidadPersonas, estado);
+            }else{
+            JOptionPane.showMessageDialog(null, "NO HAY HDP");
+            }
+        } catch (HeadlessException | SQLException e) {
+            System.out.println(e);
+        }
+
+        return r;
     }
 }

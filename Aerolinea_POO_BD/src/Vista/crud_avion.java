@@ -5,10 +5,6 @@ import Modelo.ConsultasAvion;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
-/**
- *
- * @author antho
- */
 public final class crud_avion extends javax.swing.JFrame {
 
     ConsultasAvion avion = new ConsultasAvion();
@@ -193,9 +189,9 @@ public final class crud_avion extends javax.swing.JFrame {
 
     private void btnModificarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnModificarActionPerformed
         modificar();
-           limpiarTabla();
-           listar();
-           Limpiar();
+        limpiarTabla();
+        listar();
+        Limpiar();
     }//GEN-LAST:event_btnModificarActionPerformed
 
     private void TablaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_TablaMouseClicked
@@ -225,16 +221,20 @@ public final class crud_avion extends javax.swing.JFrame {
     }//GEN-LAST:event_btnEliminarActionPerformed
 
     private void btnBuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBuscarActionPerformed
-       // buscar();
-        int idavion= Integer.parseInt(txtIdavion.getText());
-      if(txtIdavion.getText().equals("")){
-       JOptionPane.showMessageDialog(null,"Ingrese el id");
-      } else{
-      Avion avi= avion.listarID(idavion);
-       txtAerolinea.setText(avi.getAerolinea());
-      }
-   
+        if (txtIdavion.getText().equals("")) {
+          JOptionPane.showMessageDialog(null,"Ingrese un ID");
+          txtIdavion.requestFocus();
+        } else {
+            Avion r;
+            r = avion.buscar_reg(Integer.parseInt(txtIdavion.getText()));
+            txtAerolinea.setText(r.getAerolinea());
+            txtFabricante.setText(r.getFabricante());
+            txtCapacidad.setText("" + r.getCapacidadPersonas());
+            cbxEstado.setSelectedItem(r.getEstado());
+        }
+
     }//GEN-LAST:event_btnBuscarActionPerformed
+
     void agregar() {
 
         String aeroli = txtAerolinea.getText();
@@ -280,28 +280,29 @@ public final class crud_avion extends javax.swing.JFrame {
 
         }
     }
-    void buscar(){
-      int idavion= Integer.parseInt(txtIdavion.getText());
-      if(txtIdavion.getText().equals("")){
-       JOptionPane.showMessageDialog(null,"Ingrese el id");
-      } else{
-      Avion avi= avion.listarID(idavion);
-       txtAerolinea.setText(avi.getAerolinea());
-      }
-   
-    
-            txtAerolinea.setText(av.getAerolinea());
-            txtFabricante.setText(av.getFabricante());
-            txtCapacidad.setText(String.valueOf(av.getCapacidadPersonas()));
-            cbxEstado.setSelectedItem(av.getEstado());
-    
-    }
-    void Limpiar(){
-       txtAerolinea.setText("");
-       txtCapacidad.setText("");
-       txtFabricante.setText("");
-       cbxEstado.setSelectedItem(0);
-       txtAerolinea.requestFocus();
+//    void buscar(){
+//      int idavion= Integer.parseInt(txtIdavion.getText());
+//      if(txtIdavion.getText().equals("")){
+//       JOptionPane.showMessageDialog(null,"Ingrese el id");
+//      } else{
+//      Avion avi= avion.listarID(idavion);
+//       txtAerolinea.setText(avi.getAerolinea());
+//      }
+//   
+//    
+//            txtAerolinea.setText(av.getAerolinea());
+//            txtFabricante.setText(av.getFabricante());
+//            txtCapacidad.setText(String.valueOf(av.getCapacidadPersonas()));
+//            cbxEstado.setSelectedItem(av.getEstado());
+//    
+//    }
+
+    void Limpiar() {
+        txtAerolinea.setText("");
+        txtCapacidad.setText("");
+        txtFabricante.setText("");
+        cbxEstado.setSelectedItem(0);
+        txtAerolinea.requestFocus();
     }
 
     public static void main(String args[]) {
@@ -312,15 +313,12 @@ public final class crud_avion extends javax.swing.JFrame {
                     break;
                 }
             }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(crud_avion.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(crud_avion.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(crud_avion.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+        } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(crud_avion.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        
         //</editor-fold>
         //</editor-fold>
 
