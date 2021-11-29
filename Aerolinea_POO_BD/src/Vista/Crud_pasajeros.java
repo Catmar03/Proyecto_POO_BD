@@ -32,12 +32,11 @@ public class Crud_pasajeros extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
+        userLabel9 = new javax.swing.JLabel();
+        btnasientos = new javax.swing.JButton();
+        userLabel8 = new javax.swing.JLabel();
         jComboBox1 = new javax.swing.JComboBox<>();
-        btnbuscarasiento = new javax.swing.JButton();
-        btnmodificarasiento = new javax.swing.JButton();
-        btnactualizarasiento = new javax.swing.JButton();
-        btneliminarasiento = new javax.swing.JButton();
-        btnAgregar = new javax.swing.JButton();
+        btnreservas = new javax.swing.JButton();
         txtContraseña = new javax.swing.JTextField();
         userLabel7 = new javax.swing.JLabel();
         userLabel6 = new javax.swing.JLabel();
@@ -60,23 +59,24 @@ public class Crud_pasajeros extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        userLabel9.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
+        userLabel9.setForeground(new java.awt.Color(255, 255, 255));
+        userLabel9.setText("ASIENTOS");
+        jPanel1.add(userLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 130, -1, -1));
+
+        btnasientos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMG/asientes.png"))); // NOI18N
+        jPanel1.add(btnasientos, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 160, 70, 70));
+
+        userLabel8.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
+        userLabel8.setForeground(new java.awt.Color(255, 255, 255));
+        userLabel8.setText("RESERVAS");
+        jPanel1.add(userLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 360, -1, -1));
+
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         jPanel1.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 160, 160, -1));
 
-        btnbuscarasiento.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMG/xmag_search_find_export_locate_5984.png"))); // NOI18N
-        jPanel1.add(btnbuscarasiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 400, 80, -1));
-
-        btnmodificarasiento.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMG/editnote_pencil_edi_6175.png"))); // NOI18N
-        jPanel1.add(btnmodificarasiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 310, 80, -1));
-
-        btnactualizarasiento.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMG/vcsupdaterequired_93493.png"))); // NOI18N
-        jPanel1.add(btnactualizarasiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 220, 80, -1));
-
-        btneliminarasiento.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMG/1486504830-delete-dustbin-empty-recycle-recycling-remove-trash_81361.png"))); // NOI18N
-        jPanel1.add(btneliminarasiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 40, 80, -1));
-
-        btnAgregar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMG/add_icon-icons.com_52393.png"))); // NOI18N
-        jPanel1.add(btnAgregar, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 130, 80, 70));
+        btnreservas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMG/verreserva.png"))); // NOI18N
+        jPanel1.add(btnreservas, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 290, 70, 60));
 
         txtContraseña.setForeground(new java.awt.Color(204, 204, 204));
         txtContraseña.setText("Ingrese su contraseña");
@@ -294,11 +294,8 @@ public class Crud_pasajeros extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnAgregar;
-    private javax.swing.JButton btnactualizarasiento;
-    private javax.swing.JButton btnbuscarasiento;
-    private javax.swing.JButton btneliminarasiento;
-    private javax.swing.JButton btnmodificarasiento;
+    private javax.swing.JButton btnasientos;
+    private javax.swing.JButton btnreservas;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel5;
@@ -317,5 +314,7 @@ public class Crud_pasajeros extends javax.swing.JFrame {
     private javax.swing.JLabel userLabel5;
     private javax.swing.JLabel userLabel6;
     private javax.swing.JLabel userLabel7;
+    private javax.swing.JLabel userLabel8;
+    private javax.swing.JLabel userLabel9;
     // End of variables declaration//GEN-END:variables
 }

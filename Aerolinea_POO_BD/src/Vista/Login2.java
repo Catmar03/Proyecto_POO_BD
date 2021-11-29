@@ -57,27 +57,27 @@ public class Login2 extends javax.swing.JFrame {
         jLabel4.setFont(new java.awt.Font("Baskerville Old Face", 0, 36)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("AEROLINEAS");
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 390, 230, 40));
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 390, 230, 40));
 
         logo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         logo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMG/Imagen5.png"))); // NOI18N
-        jPanel1.add(logo, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 90, 290, 160));
+        jPanel1.add(logo, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 90, 290, 160));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMG/Imagen3.jpg"))); // NOI18N
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 0, 290, 500));
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 0, 290, 500));
 
         jLabel5.setFont(new java.awt.Font("Roboto Black", 1, 24)); // NOI18N
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMG/el vuela vuela.png"))); // NOI18N
         jLabel5.setText("AEREOLINEAS");
-        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 60, -1, -1));
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 60, -1, -1));
 
         title.setFont(new java.awt.Font("Roboto Black", 1, 24)); // NOI18N
         title.setText("INICIAR SESIÓN");
-        jPanel1.add(title, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 140, -1, -1));
+        jPanel1.add(title, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 140, -1, -1));
 
         userLabel.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
         userLabel.setText("USUARIO");
-        jPanel1.add(userLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 210, -1, -1));
+        jPanel1.add(userLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 210, -1, -1));
 
         txtusario.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
         txtusario.setForeground(new java.awt.Color(204, 204, 204));
@@ -93,14 +93,14 @@ public class Login2 extends javax.swing.JFrame {
                 txtusarioActionPerformed(evt);
             }
         });
-        jPanel1.add(txtusario, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 240, 410, 30));
+        jPanel1.add(txtusario, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 240, 410, 30));
 
         jSeparator1.setForeground(new java.awt.Color(0, 0, 0));
-        jPanel1.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 270, 410, 20));
+        jPanel1.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 270, 410, 20));
 
         jLabel6.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
         jLabel6.setText("CONTRASEÑA");
-        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 290, -1, -1));
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 290, -1, -1));
 
         txtcontraseña.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
         txtcontraseña.setForeground(new java.awt.Color(204, 204, 204));
@@ -116,10 +116,10 @@ public class Login2 extends javax.swing.JFrame {
                 txtcontraseñaActionPerformed(evt);
             }
         });
-        jPanel1.add(txtcontraseña, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 320, 410, 30));
+        jPanel1.add(txtcontraseña, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 320, 410, 30));
 
         jSeparator2.setForeground(new java.awt.Color(0, 0, 0));
-        jPanel1.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 350, 410, 20));
+        jPanel1.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 350, 410, 20));
 
         jButton1.setText("ENTRAR");
         jButton1.setBorder(null);
