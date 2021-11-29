@@ -32,6 +32,7 @@ public class Crud_pasajeros extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
+        jComboBox1 = new javax.swing.JComboBox<>();
         btnbuscarasiento = new javax.swing.JButton();
         btnmodificarasiento = new javax.swing.JButton();
         btnactualizarasiento = new javax.swing.JButton();
@@ -42,7 +43,6 @@ public class Crud_pasajeros extends javax.swing.JFrame {
         userLabel6 = new javax.swing.JLabel();
         txtUsuario = new javax.swing.JTextField();
         userLabel5 = new javax.swing.JLabel();
-        txtacceso = new javax.swing.JTextField();
         userLabel4 = new javax.swing.JLabel();
         txtsexo = new javax.swing.JTextField();
         userLabel3 = new javax.swing.JLabel();
@@ -59,6 +59,9 @@ public class Crud_pasajeros extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jPanel1.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 160, 160, -1));
 
         btnbuscarasiento.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMG/xmag_search_find_export_locate_5984.png"))); // NOI18N
         jPanel1.add(btnbuscarasiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 400, 80, -1));
@@ -107,14 +110,6 @@ public class Crud_pasajeros extends javax.swing.JFrame {
         userLabel5.setForeground(new java.awt.Color(255, 255, 255));
         userLabel5.setText("USUARIO");
         jPanel1.add(userLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 210, -1, 20));
-
-        txtacceso.setForeground(new java.awt.Color(204, 204, 204));
-        txtacceso.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                txtaccesoMousePressed(evt);
-            }
-        });
-        jPanel1.add(txtacceso, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 160, 160, 20));
 
         userLabel4.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
         userLabel4.setForeground(new java.awt.Color(255, 255, 255));
@@ -249,10 +244,6 @@ public class Crud_pasajeros extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_txtsexoMousePressed
 
-    private void txtaccesoMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtaccesoMousePressed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtaccesoMousePressed
-
     private void txtUsuarioMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtUsuarioMousePressed
         if (txtUsuario.getText().equals("Ingrese su sexo")) {
             txtUsuario.setText("");
@@ -308,13 +299,13 @@ public class Crud_pasajeros extends javax.swing.JFrame {
     private javax.swing.JButton btnbuscarasiento;
     private javax.swing.JButton btneliminarasiento;
     private javax.swing.JButton btnmodificarasiento;
+    private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JTextField txtContraseña;
     private javax.swing.JTextField txtDNI;
     private javax.swing.JTextField txtUsuario;
-    private javax.swing.JTextField txtacceso;
     private javax.swing.JTextField txtapellido;
     private javax.swing.JTextField txtnombre;
     private javax.swing.JTextField txtsexo;
