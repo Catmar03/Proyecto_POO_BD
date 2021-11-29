@@ -5,6 +5,8 @@
  */
 package Vista;
 
+import java.awt.Color;
+
 /**
  *
  * @author Usser
@@ -102,7 +104,7 @@ public class Login2 extends javax.swing.JFrame {
 
         txtcontraseña.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
         txtcontraseña.setForeground(new java.awt.Color(204, 204, 204));
-        txtcontraseña.setText("Ingrese se contraseñao");
+        txtcontraseña.setText("Ingrese su contraseña");
         txtcontraseña.setBorder(null);
         txtcontraseña.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
@@ -140,15 +142,22 @@ public class Login2 extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void txtusarioMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtusarioMousePressed
-        // TODO add your handling code here:
+         if (txtusario.getText().equals("Ingrese su nombre de usuario")) {
+            txtusario.setText("");
+            txtusario.setForeground(Color.black);
+        }
+        
     }//GEN-LAST:event_txtusarioMousePressed
 
     private void txtusarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtusarioActionPerformed
-        // TODO add your handling code here:
+         
     }//GEN-LAST:event_txtusarioActionPerformed
 
     private void txtcontraseñaMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtcontraseñaMousePressed
-
+        if (txtcontraseña.getText().equals("Ingrese su contraseña")) {
+            txtcontraseña.setText("");
+            txtcontraseña.setForeground(Color.black);
+        }
     }//GEN-LAST:event_txtcontraseñaMousePressed
 
     private void txtcontraseñaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtcontraseñaActionPerformed

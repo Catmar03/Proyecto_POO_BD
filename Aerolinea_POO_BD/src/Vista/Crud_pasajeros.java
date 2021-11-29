@@ -5,6 +5,8 @@
  */
 package Vista;
 
+import java.awt.Color;
+
 /**
  *
  * @author antho
@@ -16,6 +18,8 @@ public class Crud_pasajeros extends javax.swing.JFrame {
      */
     public Crud_pasajeros() {
         initComponents();
+       // txtnombre.setBackground (new java.awt.Color (0,0,0,1));
+
     }
 
     /**
@@ -27,21 +31,241 @@ public class Crud_pasajeros extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel1 = new javax.swing.JPanel();
+        btnbuscarasiento = new javax.swing.JButton();
+        btnmodificarasiento = new javax.swing.JButton();
+        btnactualizarasiento = new javax.swing.JButton();
+        btneliminarasiento = new javax.swing.JButton();
+        btnAgregar = new javax.swing.JButton();
+        txtContraseña = new javax.swing.JTextField();
+        userLabel7 = new javax.swing.JLabel();
+        userLabel6 = new javax.swing.JLabel();
+        txtUsuario = new javax.swing.JTextField();
+        userLabel5 = new javax.swing.JLabel();
+        txtacceso = new javax.swing.JTextField();
+        userLabel4 = new javax.swing.JLabel();
+        txtsexo = new javax.swing.JTextField();
+        userLabel3 = new javax.swing.JLabel();
+        userLabel2 = new javax.swing.JLabel();
+        txtDNI = new javax.swing.JTextField();
+        txtapellido = new javax.swing.JTextField();
+        userLabel1 = new javax.swing.JLabel();
+        txtnombre = new javax.swing.JTextField();
+        userLabel = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        btnbuscarasiento.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMG/xmag_search_find_export_locate_5984.png"))); // NOI18N
+        jPanel1.add(btnbuscarasiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 400, 80, -1));
+
+        btnmodificarasiento.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMG/editnote_pencil_edi_6175.png"))); // NOI18N
+        jPanel1.add(btnmodificarasiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 310, 80, -1));
+
+        btnactualizarasiento.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMG/vcsupdaterequired_93493.png"))); // NOI18N
+        jPanel1.add(btnactualizarasiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 220, 80, -1));
+
+        btneliminarasiento.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMG/1486504830-delete-dustbin-empty-recycle-recycling-remove-trash_81361.png"))); // NOI18N
+        jPanel1.add(btneliminarasiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 40, 80, -1));
+
+        btnAgregar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMG/add_icon-icons.com_52393.png"))); // NOI18N
+        jPanel1.add(btnAgregar, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 130, 80, 70));
+
+        txtContraseña.setForeground(new java.awt.Color(204, 204, 204));
+        txtContraseña.setText("Ingrese su contraseña");
+        txtContraseña.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                txtContraseñaMousePressed(evt);
+            }
+        });
+        jPanel1.add(txtContraseña, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 320, 160, 20));
+
+        userLabel7.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
+        userLabel7.setForeground(new java.awt.Color(255, 255, 255));
+        userLabel7.setText("CONTRASEÑA");
+        jPanel1.add(userLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 290, -1, 20));
+
+        userLabel6.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
+        userLabel6.setForeground(new java.awt.Color(255, 255, 255));
+        userLabel6.setText("USUARIO");
+        jPanel1.add(userLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 210, -1, 20));
+
+        txtUsuario.setForeground(new java.awt.Color(204, 204, 204));
+        txtUsuario.setText("Ingrese su usuario");
+        txtUsuario.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                txtUsuarioMousePressed(evt);
+            }
+        });
+        jPanel1.add(txtUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 240, 160, 20));
+
+        userLabel5.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
+        userLabel5.setForeground(new java.awt.Color(255, 255, 255));
+        userLabel5.setText("USUARIO");
+        jPanel1.add(userLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 210, -1, 20));
+
+        txtacceso.setForeground(new java.awt.Color(204, 204, 204));
+        txtacceso.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                txtaccesoMousePressed(evt);
+            }
+        });
+        jPanel1.add(txtacceso, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 160, 160, 20));
+
+        userLabel4.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
+        userLabel4.setForeground(new java.awt.Color(255, 255, 255));
+        userLabel4.setText("ACCESO");
+        jPanel1.add(userLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 130, -1, 20));
+
+        txtsexo.setForeground(new java.awt.Color(204, 204, 204));
+        txtsexo.setText("Ingrese su sexo");
+        txtsexo.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                txtsexoMousePressed(evt);
+            }
+        });
+        jPanel1.add(txtsexo, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 400, 160, 20));
+
+        userLabel3.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
+        userLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        userLabel3.setText("SEXO");
+        jPanel1.add(userLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 370, -1, -1));
+
+        userLabel2.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
+        userLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        userLabel2.setText("DNI");
+        jPanel1.add(userLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 290, -1, -1));
+
+        txtDNI.setForeground(new java.awt.Color(204, 204, 204));
+        txtDNI.setText("Ingrese su DNI");
+        txtDNI.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                txtDNIMousePressed(evt);
+            }
+        });
+        jPanel1.add(txtDNI, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 320, 160, 20));
+
+        txtapellido.setForeground(new java.awt.Color(204, 204, 204));
+        txtapellido.setText("Ingrese su apellido");
+        txtapellido.setBorder(null);
+        txtapellido.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                txtapellidoMousePressed(evt);
+            }
+        });
+        txtapellido.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtapellidoActionPerformed(evt);
+            }
+        });
+        jPanel1.add(txtapellido, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 240, 160, 20));
+
+        userLabel1.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
+        userLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        userLabel1.setText("APELLIDOS");
+        jPanel1.add(userLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 210, -1, 20));
+
+        txtnombre.setForeground(new java.awt.Color(204, 204, 204));
+        txtnombre.setText("Ingrese su nombre ");
+        txtnombre.setBorder(null);
+        txtnombre.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                txtnombreMousePressed(evt);
+            }
+        });
+        txtnombre.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtnombreActionPerformed(evt);
+            }
+        });
+        jPanel1.add(txtnombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 160, 160, 20));
+
+        userLabel.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
+        userLabel.setForeground(new java.awt.Color(255, 255, 255));
+        userLabel.setText("NOMBRE");
+        jPanel1.add(userLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 130, -1, -1));
+
+        jLabel5.setFont(new java.awt.Font("Roboto Black", 1, 24)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMG/el vuela vuela.png"))); // NOI18N
+        jLabel5.setText("BIENVENIDO PASAJERO");
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 40, -1, -1));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMG/new.png"))); // NOI18N
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 757, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 667, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void txtnombreMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtnombreMousePressed
+        if (txtnombre.getText().equals("Ingrese su nombre")) {
+            txtnombre.setText("");
+            txtnombre.setForeground(Color.black);
+        }
+
+    }//GEN-LAST:event_txtnombreMousePressed
+
+    private void txtnombreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtnombreActionPerformed
+
+    }//GEN-LAST:event_txtnombreActionPerformed
+
+    private void txtapellidoMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtapellidoMousePressed
+        if (txtapellido.getText().equals("Ingrese su apellido")) {
+            txtapellido.setText("");
+            txtapellido.setForeground(Color.black);
+        }
+    }//GEN-LAST:event_txtapellidoMousePressed
+
+    private void txtapellidoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtapellidoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtapellidoActionPerformed
+
+    private void txtDNIMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtDNIMousePressed
+         if (txtDNI.getText().equals("Ingrese su DNI")) {
+            txtDNI.setText("");
+            txtDNI.setForeground(Color.black);
+        }
+    }//GEN-LAST:event_txtDNIMousePressed
+
+    private void txtsexoMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtsexoMousePressed
+        if (txtsexo.getText().equals("Ingrese su sexo")) {
+            txtsexo.setText("");
+            txtsexo.setForeground(Color.black);
+        }
+    }//GEN-LAST:event_txtsexoMousePressed
+
+    private void txtaccesoMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtaccesoMousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtaccesoMousePressed
+
+    private void txtUsuarioMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtUsuarioMousePressed
+        if (txtUsuario.getText().equals("Ingrese su sexo")) {
+            txtUsuario.setText("");
+            txtUsuario.setForeground(Color.black);
+        }
+    }//GEN-LAST:event_txtUsuarioMousePressed
+
+    private void txtContraseñaMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtContraseñaMousePressed
+        if (txtContraseña.getText().equals("Ingrese su sexo")) {
+            txtContraseña.setText("");
+            txtContraseña.setForeground(Color.black);
+        }
+    }//GEN-LAST:event_txtContraseñaMousePressed
 
     /**
      * @param args the command line arguments
@@ -79,5 +303,28 @@ public class Crud_pasajeros extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnAgregar;
+    private javax.swing.JButton btnactualizarasiento;
+    private javax.swing.JButton btnbuscarasiento;
+    private javax.swing.JButton btneliminarasiento;
+    private javax.swing.JButton btnmodificarasiento;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JTextField txtContraseña;
+    private javax.swing.JTextField txtDNI;
+    private javax.swing.JTextField txtUsuario;
+    private javax.swing.JTextField txtacceso;
+    private javax.swing.JTextField txtapellido;
+    private javax.swing.JTextField txtnombre;
+    private javax.swing.JTextField txtsexo;
+    private javax.swing.JLabel userLabel;
+    private javax.swing.JLabel userLabel1;
+    private javax.swing.JLabel userLabel2;
+    private javax.swing.JLabel userLabel3;
+    private javax.swing.JLabel userLabel4;
+    private javax.swing.JLabel userLabel5;
+    private javax.swing.JLabel userLabel6;
+    private javax.swing.JLabel userLabel7;
     // End of variables declaration//GEN-END:variables
 }
