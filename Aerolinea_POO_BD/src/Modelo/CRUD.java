@@ -15,5 +15,5 @@ public interface CRUD {
     public void eliminar(int id);
 
 //    public int buscar();
-    //   public int modificar();
+
 }
